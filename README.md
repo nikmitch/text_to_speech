@@ -8,7 +8,9 @@ This code makes two calls to the OpenAI API - one to do the removal of unnecessa
 
 This is not super fast - the code seems to take about 30 seconds for 12k characters to do the removal of extraneous text, then 2 minutes for the conversion to MP3. **Track stats better later, put in standardised per 1,000 characters format**. So not great for real-time usage, at present it's more something you can get running with a few web pages you want to read, and come back later to transfer it to a mobile device.
 
-Have run up against a 4096 character limit on the TTS, so the code splits these into separate files at the moment. 
+Have run up against a 4096 character limit on the TTS, so the code splits these into separate files, then recombines them
+On the combining front, I'm using ffmpeg, which can be downloaded from ffmpeg.org, or installed with conda through conda-forge using `conda install -c conda-forge ffmpeg`
+
+
 Still to be added: 
 - Making sure the files split at the end of a word rather than mid-word
-- combining these back together into a single mp3
