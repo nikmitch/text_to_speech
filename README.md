@@ -4,6 +4,8 @@
 
 OpenAI's TTS seems to have more natural voices than many reading apps I've found. Building a tool to download web pages and convert them to mp3 so I can listen to them on my phone later.
 
+
+
 ### Skills demonstrated in this project
 
 - Interacting with the OpenAI models (for text cleaning and text-to-speech)
@@ -30,6 +32,7 @@ On the combining front, I'm using ffmpeg, which can be downloaded from ffmpeg.or
 
 ### Possible future updates
 - Making sure the files split at the end of a word rather than mid-word
+- Might try switch this to a free/local version with allchat TTS ([LINK](https://www.youtube.com/watch?v=zdNHeKkG0xY)) -- could even get it to impersonate me or someone else!
 - Allow file input to be a PDF (either at the url or locally uploaded)
 - I should add a requirements.txt file to pip install all the necessary packages from and check it works in a fresh environment
 - Add better tracking stats, put in standardised per 1,000 characters format
